@@ -4,13 +4,14 @@
 
 @section('content')
 <div class="space-y-6">
+    <!-- judul pengelolaan -->
     <div class="flex justify-between items-center">
         <div>
             <h1 class="text-2xl font-bold text-slate-800">Daftar Inventaris Sewa Alat Outdoor</h1>
             <p class="text-slate-500 text-sm">Admin: <strong>{{ $username }}</strong></p>
         </div>
     </div>
-
+    <!-- list alat(array) -->
     <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto">
         <table class="w-full text-left border-collapse">
             <thead>

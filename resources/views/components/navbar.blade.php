@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
            
-            <!-- Logo dengan Ikon Pohon/Alam -->
+            <!-- LOGO -->
             <a href="{{ route('dashboard', ['username' => $username]) }}" class="flex items-center gap-2.5 font-bold text-xl tracking-tight text-white hover:opacity-90 transition">
                 <div class="w-9 h-9 rounded-xl bg-white border border-emerald-500/30 flex items-center justify-center p-1 shadow-sm overflow-hidden">
                     <img src="{{ asset('images/tree.jpg') }}" alt="Logo Tree Outdoor" class="w-full h-full object-cover rounded-lg">
@@ -13,7 +13,7 @@
                 <span>Tree <span class="text-emerald-400 font-bold">Outdoor</span></span>
             </a>
 
-
+            <!-- Navbar yang muncul kecuali di halaman login -->
             @if(!request()->is('/'))
             <div class="flex items-center gap-1.5 text-sm font-medium">
                
@@ -39,7 +39,7 @@
                 <div class="h-4 w-px bg-emerald-700/60 mx-2"></div>
 
 
-                <!-- Tombol Logout yang Menyesuaikan Warna Tema -->
+                <!-- Tombol Logout -->
                 <a href="{{ route('login') }}" class="px-3.5 py-1.5 rounded-xl bg-red-500/20 text-red-200 border border-red-500/30 hover:bg-red-600 hover:text-white hover:border-transparent text-xs font-semibold transition-all duration-200">
                    Logout
                 </a>

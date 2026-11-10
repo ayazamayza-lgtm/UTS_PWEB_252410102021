@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="max-w-6xl mx-auto px-4 py-8 space-y-8">
-    
+    <!-- Ucapan selamat Datang -->
     <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-6">
         <h1 class="text-3xl font-bold text-emerald-900">Selamat Datang, {{ $username }}!</h1>
         <p class="text-emerald-700 mt-2">Anda berhasil masuk sebagai Admin.</p>
     </div>
-
+    <!-- card status -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition duration-200">
             <div>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <!-- Total Item  -->
+        <!-- card total item  -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition duration-200">
             <div>
                 <p class="text-xs font-semibold tracking-wider text-slate-400 uppercase">Total Item</p>
@@ -46,7 +46,7 @@
 
     </div>
 
-    <!-- 3. Bagian Akses Cepat (Desain Kartu Action Khusus) -->
+    <!-- Akses cepat-->
     <div>
         <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
             <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             
-            <!-- Tombol Action 1: Kelola Alat -->
+            <!-- Tombol aksi Kelola alat -->
             <a href="{{ route('pengelolaan', ['username' => $username]) }}" class="group bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition duration-200 flex items-center justify-between">
                 <div class="flex items-center gap-4">
                     <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition duration-200">
@@ -75,7 +75,7 @@
                 </svg>
             </a>
 
-            <!-- Tombol Action 2: Lihat Profil -->
+            <!-- Tombol aksi: lihat Profil -->
             <a href="{{ route('profile', ['username' => $username]) }}" class="group bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition duration-200 flex items-center justify-between">
                 <div class="flex items-center gap-4">
                     <div class="w-11 h-11 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition duration-200">
